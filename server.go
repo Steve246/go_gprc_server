@@ -27,7 +27,7 @@ func main() {
 	
 	pb.RegisterCalculatorServer(grpcServer, &s)
 
-	log.Fatalln("Server run on", serverInfo)
+	log.Println("Server run on", serverInfo)
 
 	err = grpcServer.Serve(listen)
 
